@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anton Huggard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-color: rgb(59, 59, 59);
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+    }
+    h1 {
+        text-align: center;
+        font-size: 4em;
+        letter-spacing: 3px;
+        font-weight: bolder;
+    }
+    #page-content {
+        background-color: rgb(192, 192, 192);
+        box-shadow: 0 5px 20px black;
+        width: calc(100% - 20px);
+        max-width: 1000px;
+        display: block;
+        margin: auto;
+        color: black;
+        text-align: center;
+        border: 10px solid rgb(219, 219, 219);
+        margin-bottom: 200px;
+    }
+    ul {
+        text-align: left;
+    }
+    .section-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+        column-gap: 30px;
+        margin: 0 20px 20px 20px;
+    }
+    .section-item {
+        background-color: white;
+        clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+        padding: 20px;
+        transition-duration: 0.5s;
+    }
+    .section-item:hover {
+        /* transform: rotate(2deg); */
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        transform: translateY(-20px);
+        transition-duration: 0.25s;
+    }
+    .section-item > img {
+        margin: 20px;
+        max-width: calc(100% - 40px);
+        max-height: 200px;
+    }
+    .section-item > div > hr {
+        width: 80%;
+    }
+    .section-item > div > p {
+        text-align: left;
+        margin: 10px;
+    }
+    .subtitle {
+        color: gray;
+        font-weight: 600;
+        text-align: center !important;
+    }
+</style>
+<body>
+    <header>
+        <h1>ANTON HUGGARD</h1>
+    </header>
+    <div id="page-content">
+        
+        <div class="content-section">
+            <h2>EMPLOYMENT</h2>
+            <div class="section-container">
+
+                <div class="section-item">
+                    <img src="https://piperpat.github.io/Cartographr/imgs/pipers-logo-2.png">
+                    <div>
+                        <h3>Pipers IP</h3>
+                        <h3>Patent engineer</h3>
+                        <hr>
+                        <p class="subtitle">AUG 2020 - present</p>
+                        <p>
+                            Pipers IP is a Patent Attorney firm notable for its world
+                            wide list of patent attorneys. Since starting at Pipers, I have 
+                            received training in intellectual property law. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section-item">
+                    <img src="https://www.biospectrumasia.com/uploads/articles/sonova_logo_svg-9067.png">
+                    <div>
+                        <h3>Sonova NZ</h3>
+                        <h3>Data entry</h3>
+                        <hr>
+                        <p class="subtitle">MAR 2020 - JUL 2020</p>
+                        <p>
+                            Sonova is a Swiss hearing-aid company. My role involved translating
+                            email orders into data in the system so it was easy to track.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section-item">
+                    <img 
+                    src="bfm-logo.PNG"
+                    >
+                    <div>
+                        <h3>95 bFM</h3>
+                        <h3>News writer & secretary</h3>
+                        <hr>
+                        <p class="subtitle">FEB 2020 - JUL 2020</p>
+                        <p>
+                            As secretary, my role involved uploading podcasts, responding to emails, 
+                            and updating the events page on the website.
+                            As news writer, I worked in a team to produce hourly news bulletins.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section-item">
+                    <img src="https://www.bricks4kidz.co.nz/wp-content/uploads/sites/47/2021/11/bricks-4-kidz-logo-3.png">
+                    <div>
+                        <h3>Bricks 4 kidz</h3>
+                        <h3>Lego robotics teacher</h3>
+                        <hr>
+                        <p class="subtitle">JAN 2019 - FEB 2020</p>
+                        <p>
+                            After-school and holiday programme for teaching lego robotics
+                            to primary school students. This was a part-time job during my
+                            final year at university.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>EDUCATION</h2>
+            <div class="section-container">
+
+
+                <div class="section-item">
+                    <img 
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Massey_University_Coat_of_Arms.svg/800px-Massey_University_Coat_of_Arms.svg.png"
+                    >
+                    <div>
+                        <h3>GCertSciTech</h3>
+                        <h2>Massey University</h2>
+                        <hr>
+                        <p class="subtitle">2021</p>
+                        <p>
+                            4 papers in chemistry, giving the equivalent of a major
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="section-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/a/ac/University_of_Auckland_Coat_of_Arms.png">
+                    <div>
+                        <h3>BA/BSc</h3>
+                        <h2>University of Auckland</h2>
+                        <hr>
+                        <p class="subtitle">2016 - 2020</p>
+                        <p>
+                            Majoring in History & Computer Science
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+</html>
