@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    text-align: center;
+    font-size: 4em;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+#page-content {
+    background-color: rgb(192, 192, 192);
+    box-shadow: 0 5px 20px black;
+    width: calc(100% - 20px);
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+    color: black;
+    text-align: center;
+    border: 10px solid rgb(219, 219, 219);
+    margin-bottom: 200px;
+}
+
+.section-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+    margin: 0 20px 20px 20px;
+}
+.section-item {
+    background-color: white;
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+    padding: 20px;
+    transition-duration: 0.5s;
+}
+.section-item:hover {
+    /* transform: rotate(2deg); */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transform: translateY(-20px);
+    transition-duration: 0.25s;
+}
+.content-section > h2 {
+    font-weight: 900;
+    font-size: 2em;
+}
+.section-item > img {
+    margin: 20px;
+    max-width: calc(100% - 40px);
+    max-height: 200px;
+}
+.section-item > div > hr {
+    width: 80%;
+}
+.section-item > div > p {
+    text-align: left;
+    margin: 10px;
+}
+.subtitle {
+    color: gray;
+    font-weight: 600;
+    text-align: center !important;
+}
+
+@media only screen and (min-width: 700px) {
+    .section-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+        column-gap: 30px;
+        margin: 0 20px 20px 20px;
+    }
+}
