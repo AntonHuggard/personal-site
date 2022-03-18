@@ -41,14 +41,21 @@ h1 {
     transform: translateY(-20px);
     transition-duration: 0.25s;
 }
-.content-section > h2 {
-    font-weight: 900;
+.content-section > h2, .project-section > h2 {
+    font-weight: 900 !important;
     font-size: 2em;
 }
+.section-item > div > h3 {
+    margin: 0;
+}
+.section-item > div > h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
 .section-item > img {
-    margin: 20px;
+    margin: 0 20px;
     max-width: calc(100% - 40px);
-    max-height: 200px;
+    max-height: 150px;
 }
 .section-item > div > hr {
     width: 80%;
@@ -61,6 +68,23 @@ h1 {
     color: gray;
     font-weight: 600;
     text-align: center !important;
+}
+
+.project h3 {
+    font-size: 2em;
+}
+.website-imgs img {
+    height: 400px;
+    margin: 10px;
+}
+.project-descr {
+    background-color: white;
+    text-align: left;
+    width: 80%;
+    padding: 20px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 700px) {
