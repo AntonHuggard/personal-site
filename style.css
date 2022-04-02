@@ -34,7 +34,7 @@ h4 {
 footer { text-align: center; margin-bottom: 50px; }
 #page-content {
     background-color: rgb(192, 192, 192);
-    box-shadow: 0 5px 20px black;
+    box-shadow: 0 5px 30px black;
     width: calc(100% - 20px);
     max-width: 1000px;
     display: block;
@@ -83,7 +83,7 @@ footer { text-align: center; margin-bottom: 50px; }
 .section-item > div > hr {
     width: 80%;
 }
-.section-item > div > p {
+.section-item > div > p, .blog-p {
     text-align: left;
     margin: 10px;
 }
