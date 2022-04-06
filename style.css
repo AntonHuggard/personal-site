@@ -130,8 +130,9 @@ footer { text-align: center; margin-bottom: 50px; }
 
 #true-title {
     padding-top: 30vh;
-    padding-bottom: 30vh;
+    padding-bottom: 10vh;
     border: 2px solid #ffffff;
+    margin-top: 5vh;
     margin-bottom: 10vh;
 }
 #true-title h3 {
@@ -145,14 +146,14 @@ footer { text-align: center; margin-bottom: 50px; }
 }
 #true-title h3 {letter-spacing: 10px;}
 #true-title h1 {
-    font-family: 'Katibeh';
-    /* font-family: 'Milonga', cursive; */
+    /* font-family: 'Katibeh'; */
+    font-family: 'Milonga', cursive;
     /* font-family: 'Ewert', cursive; */
     margin: 0;
     width: 100%;
     text-align: center;
     font-size: 7.5em;
-    line-height: 15px;
+    line-height: 150px;
     letter-spacing: 5px;
     display:inline-block;
     -webkit-transform:scale(1, 1.3); /* Safari and Chrome */
@@ -160,6 +161,6 @@ footer { text-align: center; margin-bottom: 50px; }
     -ms-transform:scale(1, 1.3); /* IE 9 */
     -o-transform:scale(1, 1.3); /* Opera */
     transform:scale(1, 1.3); /* W3C */
-    margin-bottom: 120px;
+    margin-bottom: 5vh;
 }
 .embiggen { font-size: 1.5em; }
