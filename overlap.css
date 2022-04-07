@@ -32,19 +32,6 @@ h4 {
     color: white;
     text-decoration: none;
 }
-footer { text-align: center; margin-bottom: 50px; }
-#page-content {
-    background-color: rgb(192, 192, 192);
-    box-shadow: 0 5px 30px black;
-    width: calc(100% - 20px);
-    max-width: 1000px;
-    display: block;
-    margin: auto;
-    color: black;
-    text-align: center;
-    border: 10px solid rgb(219, 219, 219);
-    margin-bottom: 200px;
-}
 
 
 path { fill: transparent; } 
@@ -69,7 +56,7 @@ text {
     display: block;
     margin: auto;
     position: absolute;
-    top: 5vh;
+    top: 15vh;
     left: calc(50% - 250px);
     width: 500px;
     z-index: 2;
@@ -80,10 +67,10 @@ text {
     /* font-family: 'Milonga', cursive; */
     /* font-family: 'Ewert', cursive; */
     margin-bottom: 0;
-    margin-top: 10vh;
+    margin-top: 20vh;
     font-size: 5em;
+    letter-spacing: 10px;
 }
-#true-title h3 {letter-spacing: 10px;}
 #true-title h1 {
     /* font-family: 'Milonga', cursive; */
     font-family: 'Jacques Francois Shadow', cursive;
@@ -114,8 +101,11 @@ text {
     }
 }
 @media only screen and (max-width: 670px) {
+    #true-title svg {
+        top: 8vh;
+    }    
     #true-title h3 {
-        margin-top: 120px;
+        margin-top: 25vh;
         font-size: 2em;
     }
     #true-title h1 {
