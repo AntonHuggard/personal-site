@@ -12,6 +12,8 @@ footer { text-align: center; margin-bottom: 50px; }
     margin-bottom: 200px;
 }
 
+#page-content img { max-width: 100%;}
+
 .section-container {
     display: grid;
     grid-template-columns: 1fr;
