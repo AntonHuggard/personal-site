@@ -187,9 +187,10 @@ text {
 .embiggen { font-size: 1.5em; }
 @media only screen and (max-width: 1000px) {
     #true-title {
-        padding-top: 25vh;
+        padding-top: 5vh;
         padding-bottom: 25vh;
     }
+    #true-title svg { margin-top: 5vh; }
     #true-title h3 {letter-spacing: 10px;}
     #true-title h1 {
         font-size: 5em;
@@ -200,14 +201,21 @@ text {
 }
 @media only screen and (max-width: 670px) {
     #true-title {
-        padding-top: 27vh;
+        padding-top: 14vh;
         padding-bottom: 27vh;
     }
+    #true-title svg { margin-top: 0; }
     #true-title h3 {font-size: 2em;}
     #true-title h1 {
         font-size: 3em;
         line-height: 80px;
         letter-spacing: 2px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    #true-title svg { display: none;}
+    #true-title {
+        padding-top: 28vh;
     }
 }
 @media only screen and (max-width: 450px) {
