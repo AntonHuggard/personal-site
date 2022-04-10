@@ -49,7 +49,7 @@ footer { text-align: center; margin-bottom: 50px; }
     grid-template-columns: 1fr;
     row-gap: 30px;
     column-gap: 30px;
-    margin: 0 20px 20px 50px;
+    /* margin: 0 10px 10px 10px; */
 }
 .section-item {
     background-color: white;
@@ -87,7 +87,7 @@ footer { text-align: center; margin-bottom: 50px; }
 }
 .patent-doc {
     width: 200px;
-    transform: skewX(20deg);
+    transform: skewX(10deg);
     box-shadow: -10px 10px 2px rgba(0, 0, 0, 0.705);
     margin: 10px;
     margin-bottom: 30px;
@@ -95,7 +95,7 @@ footer { text-align: center; margin-bottom: 50px; }
     cursor: pointer;
 }
 .patent-doc:hover {
-    transform: skewX(20deg) translateY(-10px);
+    transform: skewX(10deg) translateY(-10px);
     box-shadow: -10px 20px 5px rgba(0, 0, 0, 0.705);
     transition: 0.5s;
 }
@@ -139,7 +139,8 @@ footer { text-align: center; margin-bottom: 50px; }
         grid-template-columns: 1fr 1fr;
         row-gap: 30px;
         column-gap: 30px;
-        margin: 0 20px 20px 50px;
+        margin-left: 20px;
+        margin-right: 20px;
         margin-bottom: 100px;
     }
     .centre-item { grid-column: 1 / span 2; }
@@ -147,5 +148,9 @@ footer { text-align: center; margin-bottom: 50px; }
         width: 400px;
         display: block;
         margin: auto;
+    }
+    .patent-exp {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
