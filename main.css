@@ -22,6 +22,27 @@ footer { text-align: center; margin-bottom: 50px; }
 .fancy-text {
     font-family: 'Katibeh';
     font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fancy-text span {
+    background: #fff;
+    margin: 0 15px;
+}
+.fancy-text:before, .fancy-text:after {
+    background: black;
+    height: 2px;
+    flex: 1;
+    content: '';
+}
+.fancy-text:before {
+    margin-left: 50px;
+    margin-right: 15px;
+}
+.fancy-text:after {
+    margin-left: 15px;
+    margin-right: 50px;
 }
 .section-container {
     display: grid;
@@ -32,11 +53,11 @@ footer { text-align: center; margin-bottom: 50px; }
 }
 .section-item {
     background-color: white;
-    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
     padding: 20px;
     transition-duration: 0.5s;
 }
-.section-item:hover {
+.clipped-item { clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%); }
+.hoverable-section-item:hover {
     /* transform: rotate(2deg); */
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
     transform: translateY(-20px);
@@ -64,6 +85,19 @@ footer { text-align: center; margin-bottom: 50px; }
 .section-item > div > p, .blog-p {
     text-align: left;
     margin: 10px;
+}
+.patent-doc {
+    width: 200px;
+    transform: skewX(20deg);
+    box-shadow: -10px 10px 2px rgba(0, 0, 0, 0.705);
+    margin: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.patent-doc:hover {
+    transform: skewX(20deg) translateY(-10px);
+    box-shadow: -10px 20px 5px rgba(0, 0, 0, 0.705);
+    transition: 0.5s;
 }
 .subtitle {
     color: gray;
