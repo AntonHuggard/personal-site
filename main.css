@@ -75,7 +75,6 @@ footer { text-align: center; margin-bottom: 50px; }
     margin-bottom: 5px;
 }
 .section-item > img {
-    margin: 0 20px;
     max-width: calc(100% - 40px);
     max-height: 150px;
 }
@@ -91,6 +90,7 @@ footer { text-align: center; margin-bottom: 50px; }
     transform: skewX(20deg);
     box-shadow: -10px 10px 2px rgba(0, 0, 0, 0.705);
     margin: 10px;
+    margin-bottom: 30px;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -99,6 +99,11 @@ footer { text-align: center; margin-bottom: 50px; }
     box-shadow: -10px 20px 5px rgba(0, 0, 0, 0.705);
     transition: 0.5s;
 }
+.patent-exp {
+    background-color: white;
+    padding: 15px;
+}
+.patent-exp hr { width: 80%; }
 .subtitle {
     color: gray;
     font-weight: 600;
