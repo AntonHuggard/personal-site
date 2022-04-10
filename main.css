@@ -8,12 +8,21 @@ footer { text-align: center; margin-bottom: 50px; }
     margin: auto;
     color: black;
     text-align: center;
-    border: 10px solid rgb(219, 219, 219);
+    border: 10px solid rgb(255, 255, 255);
     margin-bottom: 200px;
 }
-
-#page-content img { max-width: 100%;}
-
+.top-img { 
+    background-color: white;
+    width: 100%;
+}
+#page-content img { 
+    max-width: 100%;
+    background-color: white;
+}
+.fancy-text {
+    font-family: 'Katibeh';
+    font-size: 3em;
+}
 .section-container {
     display: grid;
     grid-template-columns: 1fr;
