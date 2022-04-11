@@ -102,8 +102,10 @@ footer { text-align: center; margin-bottom: 50px; }
 .patent-exp {
     background-color: white;
     padding: 15px;
+    margin-bottom: 30px;
 }
 .patent-exp hr { width: 80%; }
+.patent-exp ul { text-align: left; }
 .subtitle {
     color: gray;
     font-weight: 600;
