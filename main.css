@@ -94,7 +94,6 @@ footer { text-align: center; margin-bottom: 50px; }
     margin: 10px;
     margin-bottom: 30px;
     transition: 0.5s;
-    cursor: pointer;
 }
 .patent-doc:hover {
     transform: skewX(10deg) translateY(-10px);
