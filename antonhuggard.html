@@ -13,8 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="overlap.css">
     <link rel="stylesheet" href="main.css">
+    <script src="gallery.js"></script>
 </head>
-<body>
+<body onload="gallery_control">
       
     <header id="true-title"> 
         
@@ -214,9 +215,9 @@
 
         <h2 class="fancy-text">GALLERY</h2>
         <div id="gallery-images">
-            <img id="img-capn" src="img/photos/captain.jpg">
-            <img id="img-cmdy" src="img/photos/ham-anton-comedians.jpg" class="gallery-img-in">
-            <img id="img-bush" src="img/photos/kaimanawas.jpg">
+            <img id="img-capn" class="" src="img/photos/captain.jpg">
+            <img id="img-cmdy" class="gallery-img-in hidden" src="img/photos/ham-anton-comedians.jpg">
+            <img id="img-bush" class="hidden" src="img/photos/kaimanawas.jpg">
         </div>
 
         <div class="top-img">
