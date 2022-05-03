@@ -119,12 +119,7 @@ footer { text-align: center; margin-bottom: 50px; }
 .website-imgs img {
     height: 400px;
     margin: 10px;
-    opacity: 80%;
     transition-duration: 0.5s;
-}
-.website-imgs img:hover {
-    opacity: 100%;
-    transition-duration: 0.25s;
 }
 .pagodalau {margin: 10px;}
 .project-descr {
@@ -139,30 +134,6 @@ footer { text-align: center; margin-bottom: 50px; }
     margin-bottom: 30px;
 }
 
-
-#gallery-images > img {
-    max-height: 500px;
-    transition-duration: 0.5s;
-}
-.slide-out {
-    transform: translateX(-80px);
-    opacity: 0%;
-}
-
-.gallery-img-in {
-    opacity: 10%;
-    transform: translateX(80px);
-}
-.gallery-img-in:hover {
-    opacity: 100% !important;
-    transform: translateX(0) !important;
-}
-.gallery-img-in:active {
-    opacity: 10% !important;
-    transform: translateX(-80px) !important;
-}
-
-.hidden { display: none; }
 
 @media only screen and (min-width: 700px) {
     .section-container {
