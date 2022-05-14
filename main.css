@@ -110,15 +110,17 @@ footer { text-align: center; margin-bottom: 50px; }
 }
 .patent-doc {
     width: 200px;
-    transform: skewX(10deg);
+    height: 230px;
+    transform: skewX(20deg);
     box-shadow: -10px 10px 2px rgba(0, 0, 0, 0.705);
     margin: 10px;
     margin-bottom: 30px;
+    margin-left: 20px;
     transition: 0.5s;
 }
 .patent-doc:hover {
-    transform: skewX(10deg) translateY(-10px);
-    box-shadow: -10px 20px 5px rgba(0, 0, 0, 0.705);
+    transform: skewX(20deg) translateY(-20px);
+    box-shadow: -10px 30px 10px rgba(0, 0, 0, 0.705);
     transition: 0.5s;
 }
 .patent-exp {
@@ -144,7 +146,11 @@ footer { text-align: center; margin-bottom: 50px; }
     transition-duration: 0.5s;
 }
 
-.pagodalau {margin: 10px;}
+.pagodalau {
+    margin: 10px;
+    max-width: calc(100% - 20px) !important;
+}
+
 .project-descr {
     background-color: white;
     text-align: left;
@@ -180,8 +186,15 @@ footer { text-align: center; margin-bottom: 50px; }
 }
 
 .monochrome:hover {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
+    box-shadow: 0 0 20px #fff;
+}
+
+@media only screen and (max-width: 700px) {
+    .big-scrn-img {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 700px) {
