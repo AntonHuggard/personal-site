@@ -1,3 +1,37 @@
+@keyframes hideLoading {
+    0% {
+        opacity: 100%;
+    }
+    95% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+#loading-container {
+    z-index: 11;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    animation-name: hideLoading;
+    animation-duration: 3.5s;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+}
+
+#loading {
+    height: 100vh;
+    display: block;
+    margin: auto;
+    pointer-events: none;
+}
+
+
 #page-filter {
     opacity: 12.5%;
     z-index: 10;
@@ -192,6 +226,12 @@ footer { text-align: center; margin-bottom: 50px; }
 }
 
 @media only screen and (max-width: 700px) {
+    #loading {
+        width: 100vw;
+        max-height: 100vh;
+        object-fit: contain;
+    }
+
     .big-scrn-img {
         display: none;
     }
