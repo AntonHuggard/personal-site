@@ -43,8 +43,6 @@ text {
 }
 
 #true-title {
-    /* padding-top: 30vh; */
-    /* padding-bottom: 20vh; */
     border: 2px solid #ffffff;
     width: calc(100% - 40px);
     height: calc(100vh - 64px);
@@ -53,6 +51,66 @@ text {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+@media only screen and (min-width: 650px) {
+    #true-title {
+        clip-path: polygon(
+            0 100px,
+            100px 0,
+            /* ^ top left corner */
+            calc(100% - 100px) 0,
+            100% 100px,
+            /* ^ top right corner */
+            100% calc(100% - 100px),
+            calc(100% - 100px) 100%,
+            /* ^ bottom right corner */
+            100px 100%,
+            0 calc(100% - 100px),
+            0 100px
+        );
+        overflow: clip;
+        overflow-x: hidden;
+    }
+    .border-inversion {
+        position: absolute;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        overflow: clip;
+        overflow-x: hidden;
+    }
+    #border-circle-1 {
+        top: -75px;
+        left: -75px;
+    }
+    #border-circle-2 {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        background-color: transparent;
+        border: 2px solid white;
+        border-bottom-left-radius: 100%;
+        top: 25px;
+        left: calc(100% - 125px);
+    }
+    #border-circle-3 {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        background-color: transparent;
+        border: 2px solid white;
+        border-top-left-radius: 100%;
+        top: calc(100% - 130px);
+        left: calc(100% - 125px);
+    }
+    #border-circle-4 {
+        top: calc(100% - 130px);
+        left: -75px;
+    }
+}
+
 #true-title svg {
     display: block;
     margin: auto;
